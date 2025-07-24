@@ -98,10 +98,10 @@ export default function Sidebar({ activeSection, onSectionChange }: SidebarProps
 
       {/* Sidebar */}
       <motion.aside
-        className={`fixed left-0 top-0 h-full w-280 glass-nav z-40 flex flex-col lg:translate-x-0`}
-        initial={{ x: -280 }}
+        className={`fixed left-0 top-0 h-full w-64 glass-nav z-40 flex flex-col lg:translate-x-0`}
+        initial={{ x: -256 }}
         animate={{ 
-          x: isOpen || (typeof window !== 'undefined' && window.innerWidth >= 1024) ? 0 : -280 
+          x: isOpen || (typeof window !== 'undefined' && window.innerWidth >= 1024) ? 0 : -256 
         }}
         transition={createTransition({
           type: shouldAnimate('decorative') ? 'spring' : 'tween',

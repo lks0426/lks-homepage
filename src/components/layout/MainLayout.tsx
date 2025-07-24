@@ -39,8 +39,10 @@ export default function MainLayout({ children }: MainLayoutProps) {
     <div className="min-h-screen bg-bg-primary">
       <Sidebar activeSection={activeSection} onSectionChange={setActiveSection} />
       
-      <main className="lg:ml-280 transition-all duration-300">
-        <div className="min-h-screen">
+      {/* 主内容区域 - 在大屏幕上考虑侧边栏宽度 */}
+      <main className="min-h-screen transition-all duration-300 lg:ml-64">
+        {/* 内容容器 - 最大宽度并居中 */}
+        <div className="mx-auto max-w-7xl">
           {children}
         </div>
       </main>

@@ -82,6 +82,8 @@ module.exports = {
         '12': '3rem',
         '16': '4rem',
         '20': '5rem',
+        '64': '16rem',  // 256px - 标准侧边栏宽度
+        '80': '20rem',  // 320px - 大侧边栏宽度
       },
       borderRadius: {
         'sm': '0.375rem',
