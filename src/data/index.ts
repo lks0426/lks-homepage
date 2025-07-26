@@ -12,10 +12,10 @@ export const navItems: NavItem[] = [
 
 // Hero Statistics
 export const heroStats: Stat[] = [
-  { label: '项目数量', value: '15+', icon: 'Briefcase', color: 'text-primary-blue' },
-  { label: '技术栈', value: '20+', icon: 'Code2', color: 'text-primary-purple' },
-  { label: '开发经验', value: '3年', icon: 'Clock', color: 'text-primary-cyan' },
-  { label: '客户好评', value: '98%', icon: 'ThumbsUp', color: 'text-accent-success' },
+  { label: '实战项目', value: '15+', icon: 'Briefcase', color: 'text-primary-blue' },
+  { label: '技术工具', value: '20+', icon: 'Code2', color: 'text-primary-purple' },
+  { label: '创业历程', value: '3年', icon: 'Clock', color: 'text-primary-cyan' },
+  { label: '交流反馈', value: '98%', icon: 'ThumbsUp', color: 'text-accent-success' },
 ];
 
 // Projects Data

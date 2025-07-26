@@ -42,32 +42,45 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              你好，我是{' '}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              和我一起探索{' '}
               <motion.span 
                 className="bg-gradient-secondary bg-clip-text text-transparent animate-gradient-shift"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
-                LKS
+                AI 的无限可能
               </motion.span>
+              {' '}– LKS
             </h1>
-            <div className="text-xl md:text-2xl text-text-secondary mb-8 leading-relaxed">
+            <div className="text-lg md:text-xl text-text-secondary mb-8 leading-relaxed">
               <motion.div
+                className="font-medium"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
               >
-                AI技术专家 · 全栈开发者 · 创新实践者
+                AI 技术创业者 & 全栈开发者
               </motion.div>
               <motion.div
-                className="mt-4 text-lg text-text-muted max-w-3xl mx-auto"
+                className="mt-3 text-base md:text-lg text-text-muted max-w-4xl mx-auto"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
-                专注于AI应用开发、现代Web技术和智能系统构建。
-                致力于用技术创造价值，用创新驱动未来。
+                公开分享从 0→1 的产品验证、技术选型与踩坑记录
+                <br className="hidden md:block" />
+                欢迎交流、共同成长 🚀
+              </motion.div>
+              <motion.div
+                className="mt-4 text-base text-text-secondary max-w-3xl mx-auto"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.9, duration: 0.6 }}
+              >
+                从想法验证、MVP落地、到技术实现与商业化路径
+                <br />
+                <span className="text-primary-blue font-medium">你也在做？来一起讨论 💬</span>
               </motion.div>
             </div>
           </motion.div>
@@ -76,7 +89,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.6 }}
+            transition={{ delay: 1.2, duration: 0.6 }}
           >
             <Button
               variant="primary"
@@ -84,7 +97,7 @@ export default function Hero() {
               onClick={handleViewProjects}
               icon={<Eye size={20} />}
             >
-              查看项目作品
+              探索实战案例
             </Button>
             <Button
               variant="secondary"
@@ -92,7 +105,7 @@ export default function Hero() {
               onClick={handleContactMe}
               icon={<ArrowRight size={20} />}
             >
-              联系我
+              一起聊聊创业
             </Button>
           </motion.div>
         </div>
@@ -158,18 +171,22 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.8, duration: 0.8 }}
         >
-          <h3 className="text-xl text-text-secondary mb-6">
-            核心技术栈
+          <h3 className="text-xl text-text-secondary mb-3">
+            创业路上的得力工具 🛠️
           </h3>
-          <div className="flex flex-wrap justify-center gap-4">
+          <p className="text-sm text-text-muted mb-6 max-w-md mx-auto">
+            每个工具背后都有选型的故事和踩坑的经历
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
             {['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'OpenAI', 'Claude', 'AWS'].map((tech, index) => (
               <motion.span
                 key={tech}
-                className="px-4 py-2 glass-card rounded-full text-sm text-text-primary"
+                className="px-4 py-2 glass-card rounded-full text-sm text-text-primary hover:bg-blue-50/50 cursor-pointer transition-colors"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 2 + index * 0.1, duration: 0.4 }}
                 whileHover={{ scale: 1.1 }}
+                title={`点击了解 ${tech} 的实战经验`}
               >
                 {tech}
               </motion.span>
