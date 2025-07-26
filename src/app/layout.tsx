@@ -11,8 +11,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'LKS - AI技术专家 | 个人作品集',
-  description: 'AI技术专家LKS的个人作品集网站，展示AI开发、全栈技术和创新项目。专注于AI应用开发、智能系统构建和现代Web技术。',
+  title: 'LKS - AI技术开发者 | 个人作品集',
+  description: 'AI技术开发者LKS的个人作品集网站，展示AI开发、全栈技术和创新项目。专注于AI应用开发、智能系统构建和现代Web技术。',
   keywords: 'AI开发,全栈开发,Next.js,React,TypeScript,OpenAI,Claude,机器学习,Web开发',
   authors: [{ name: 'LKS' }],
   creator: 'LKS',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'LKS - AI技术专家 | 个人作品集',
-    description: 'AI技术专家LKS的个人作品集，展示AI开发能力和技术项目',
+    title: 'LKS - AI技术开发者 | 个人作品集',
+    description: 'AI技术开发者LKS的个人作品集，展示AI开发能力和技术项目',
     url: 'https://lks0426.com',
     siteName: 'LKS Portfolio',
     locale: 'zh_CN',
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'LKS - AI技术专家',
+        alt: 'LKS - AI技术开发者',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LKS - AI技术专家 | 个人作品集',
-    description: 'AI技术专家LKS的个人作品集，展示AI开发能力和技术项目',
+    title: 'LKS - AI技术开发者 | 个人作品集',
+    description: 'AI技术开发者LKS的个人作品集，展示AI开发能力和技术项目',
     images: ['/og-image.jpg'],
   },
   robots: {

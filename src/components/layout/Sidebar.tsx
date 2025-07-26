@@ -121,7 +121,7 @@ export default function Sidebar({ activeSection, onSectionChange }: SidebarProps
               LKS
             </h1>
             <p className="text-text-secondary text-sm">
-              AI技术专家 · 全栈开发者
+              AI技术探索者 · 全栈开发者
             </p>
           </motion.div>
         </div>
@@ -235,26 +235,6 @@ export default function Sidebar({ activeSection, onSectionChange }: SidebarProps
                 </div>
               </div>
             </div>
-            
-            {/* Performance indicator */}
-            {devicePerformance && (
-              <motion.div
-                className={`w-2 h-2 rounded-full ${
-                  devicePerformance.level === 'high' ? 'bg-accent-success' :
-                  devicePerformance.level === 'medium' ? 'bg-accent-warning' :
-                  'bg-accent-error'
-                }`}
-                animate={{
-                  scale: [1, 1.2, 1],
-                  opacity: [1, 0.7, 1]
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: 'easeInOut'
-                }}
-              />
-            )}
           </motion.button>
         </div>
 
@@ -336,21 +316,11 @@ export default function Sidebar({ activeSection, onSectionChange }: SidebarProps
             ))}
           </motion.div>
           
-          {/* Copyright and Performance Info */}
+          {/* Copyright */}
           <div className="text-center">
             <p className="text-text-muted text-xs mb-1">
               © 2024 LKS. All rights reserved.
             </p>
-            {devicePerformance && (
-              <motion.p 
-                className="text-text-muted text-xs opacity-60"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.6 }}
-                transition={{ delay: 1, duration: 0.5 }}
-              >
-                性能等级: {devicePerformance.level === 'high' ? '高' : devicePerformance.level === 'medium' ? '中' : '低'}
-              </motion.p>
-            )}
           </div>
         </div>
       </motion.aside>

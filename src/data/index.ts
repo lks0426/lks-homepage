@@ -14,27 +14,27 @@ export const navItems: NavItem[] = [
 export const heroStats: Stat[] = [
   { label: '实战项目', value: '15+', icon: 'Briefcase', color: 'text-primary-blue' },
   { label: '技术工具', value: '20+', icon: 'Code2', color: 'text-primary-purple' },
-  { label: '创业历程', value: '3年', icon: 'Clock', color: 'text-primary-cyan' },
-  { label: '交流反馈', value: '98%', icon: 'ThumbsUp', color: 'text-accent-success' },
+  { label: '创业历程', value: '1年', icon: 'Clock', color: 'text-primary-cyan' },
+  { label: '积极反馈', value: '极佳', icon: 'ThumbsUp', color: 'text-accent-success' },
 ];
 
 // Projects Data
 export const projects: Project[] = [
   {
     id: 'ai-hr',
-    title: 'AI-HR 智能招聘系统',
-    description: '基于大语言模型的智能招聘助手，支持简历解析、候选人匹配、面试问题生成等功能。',
-    image: '/images/ai-hr-preview.jpg',
+    title: 'AI-HR 企业幸福赋能主题网站',
+    description: '基于AI的日本中小企业员工幸福度标准化解决方案',
+    image: '/ai-hr.png',
     tags: ['Next.js', 'OpenAI', 'TypeScript', 'Tailwind CSS'],
     liveUrl: 'https://ai-hr.lks0426.com/',
-    githubUrl: 'https://github.com/lks0426/ai-hr',
+    githubUrl: 'https://github.com/lks0426/AI-HR2',
     category: 'ai'
   },
   {
     id: 'personal-website',
-    title: '个人技术展示网站',
+    title: '个人主页',
     description: '响应式的个人作品集网站，采用现代化设计和玻璃态效果，展示技术能力和项目经验。',
-    image: '/images/portfolio-preview.jpg',
+    image: '/personal.png',
     tags: ['Next.js', 'React', 'Framer Motion', 'Tailwind CSS'],
     liveUrl: 'https://lks0426.com/',
     category: 'web'
@@ -43,16 +43,15 @@ export const projects: Project[] = [
     id: 'ai-chat-bot',
     title: 'AI 聊天机器人',
     description: '集成多种AI模型的聊天机器人，支持上下文记忆、文档问答、代码生成等功能。',
-    image: '/images/chatbot-preview.jpg',
+    image: '/coming_soon.png',
     tags: ['React', 'Node.js', 'OpenAI', 'WebSocket'],
-    githubUrl: 'https://github.com/lks0426/ai-chatbot',
     category: 'ai'
   },
   {
     id: 'task-management',
     title: '任务管理系统',
     description: '功能完整的项目管理工具，支持团队协作、进度跟踪、时间统计等企业级功能。',
-    image: '/images/task-management-preview.jpg',
+    image: '/coming_soon.png',
     tags: ['Vue.js', 'Express', 'MongoDB', 'Element UI'],
     category: 'web'
   },
@@ -60,7 +59,7 @@ export const projects: Project[] = [
     id: 'data-visualization',
     title: '数据可视化平台',
     description: '交互式数据分析和可视化平台，支持多种图表类型和实时数据更新。',
-    image: '/images/data-viz-preview.jpg',
+    image: '/coming_soon.png',
     tags: ['D3.js', 'React', 'Python', 'Flask'],
     category: 'tool'
   },
@@ -68,9 +67,8 @@ export const projects: Project[] = [
     id: 'ai-image-generator',
     title: 'AI 图片生成器',
     description: '基于Stable Diffusion的图片生成工具，提供友好的界面和丰富的参数控制。',
-    image: '/images/ai-image-preview.jpg',
+    image: '/coming_soon.png',
     tags: ['Python', 'FastAPI', 'React', 'Stable Diffusion'],
-    githubUrl: 'https://github.com/lks0426/ai-image-gen',
     category: 'ai'
   }
 ];

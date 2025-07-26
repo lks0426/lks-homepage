@@ -1,6 +1,6 @@
 # AI Showcase - LKS Personal Portfolio
 
-一个现代化的AI技术专家个人作品集网站，采用Next.js 15和玻璃态设计风格。
+一个现代化的AI技术开发者个人作品集网站，采用Next.js 15和玻璃态设计风格。
 
 ## 🌟 特性
 

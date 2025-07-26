@@ -43,7 +43,7 @@ export default function Portfolio() {
             项目作品<GradientText gradient="secondary" hover>集</GradientText>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            展示我在AI应用开发、Web技术和工具创建方面的实践成果
+            我在AI应用开发、Web技术和工具创建方面的实践成果
           </p>
         </motion.div>
 
