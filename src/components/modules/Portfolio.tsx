@@ -93,24 +93,22 @@ export default function Portfolio() {
           layout={shouldAnimate('decorative')}
           transition={{ duration: getAnimationDuration(ANIMATION_TIMING.slow), ease: EASING.easeOut }}
         >
-          <AnimatePresence mode="wait">
-            {filteredProjects.map((project, index) => (
-              <motion.div
-                key={project.id}
-                layout
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.8 }}
-                transition={{
-                  duration: ANIMATION_TIMING.slow,
-                  delay: index * 0.1,
-                  ease: EASING.backOut
-                }}
-              >
+          {filteredProjects.map((project, index) => (
+            <motion.div
+              key={`${activeFilter}-${project.id}`}
+              layout
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{
+                duration: ANIMATION_TIMING.slow,
+                delay: index * 0.1,
+                ease: EASING.backOut
+              }}
+            >
                 <ProjectCard project={project} index={index} />
               </motion.div>
             ))}
-          </AnimatePresence>
         </motion.div>
       </div>
     </section>

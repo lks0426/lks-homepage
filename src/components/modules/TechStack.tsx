@@ -116,35 +116,33 @@ export default function TechStack() {
                   }
                 }}
               >
-                <AnimatePresence mode="wait">
-                  {filteredSkills.map((skill, index) => (
-                    <motion.div
-                      key={skill.name}
-                      variants={{
-                        hidden: { opacity: 0, x: -20 },
-                        visible: { 
-                          opacity: 1, 
-                          x: 0,
-                          transition: {
-                            duration: getAnimationDuration(0.4),
-                            delay: getAnimationDuration(index * 0.05)
-                          }
+                {filteredSkills.map((skill, index) => (
+                  <motion.div
+                    key={`${activeTab}-${skill.name}`}
+                    variants={{
+                      hidden: { opacity: 0, x: -20 },
+                      visible: { 
+                        opacity: 1, 
+                        x: 0,
+                        transition: {
+                          duration: getAnimationDuration(0.4),
+                          delay: getAnimationDuration(index * 0.05)
                         }
-                      }}
-                      initial="hidden"
-                      animate="visible"
-                      exit="hidden"
-                    >
-                      <SkillBar
-                        name={skill.name}
-                        level={skill.level}
-                        icon={skill.icon}
-                        color={getSkillColor(skill.category)}
-                        delay={index}
-                      />
-                    </motion.div>
-                  ))}
-                </AnimatePresence>
+                      }
+                    }}
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                  >
+                    <SkillBar
+                      name={skill.name}
+                      level={skill.level}
+                      icon={skill.icon}
+                      color={getSkillColor(skill.category)}
+                      delay={index}
+                    />
+                  </motion.div>
+                ))}
               </motion.div>
             </GlassCard>
           </motion.div>
