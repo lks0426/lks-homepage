@@ -9,7 +9,7 @@ import AIIcon from '@/components/ui/AIIcon';
 
 export default function AIServices() {
   const handleContact = () => {
-    window.location.href = 'mailto:contact@lks0426.com?subject=AI服务咨询';
+    window.location.href = 'mailto:lks0426aa@gmail.com?subject=AI服务咨询';
   };
 
   return (
@@ -114,7 +114,7 @@ export default function AIServices() {
 
 function ServiceCard({ service }: { service: typeof aiServices[0] }) {
   const handleContact = () => {
-    window.location.href = `mailto:contact@lks0426.com?subject=${service.name}咨询&body=您好，我对${service.name}服务很感兴趣，希望了解更多详情。`;
+    window.location.href = `mailto:lks0426aa@gmail.com?subject=${service.name}咨询&body=您好，我对${service.name}服务很感兴趣，希望了解更多详情。`;
   };
 
   return (

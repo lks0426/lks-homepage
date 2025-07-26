@@ -167,7 +167,7 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 
 ## 📞 联系方式
 
-- **邮箱**: contact@lks0426.com
+- **邮箱**: lks0426aa@gmail.com
 - **网站**: https://lks0426.com
 - **GitHub**: https://github.com/lks0426
 

@@ -275,13 +275,13 @@ export default function Sidebar({ activeSection, onSectionChange }: SidebarProps
                 label: "GitHub"
               },
               { 
-                href: "mailto:contact@lks0426.com", 
+                href: "mailto:lks0426aa@gmail.com", 
                 icon: Mail, 
                 color: "primary-purple",
                 label: "Email"
               },
               { 
-                href: "https://linkedin.com/in/lks0426", 
+                href: "https://www.linkedin.com/in/lks0426", 
                 icon: Linkedin, 
                 color: "primary-cyan",
                 label: "LinkedIn"

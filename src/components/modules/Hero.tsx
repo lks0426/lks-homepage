@@ -30,7 +30,7 @@ export default function Hero() {
   };
 
   const handleContactMe = () => {
-    window.location.href = 'mailto:contact@lks0426.com';
+    window.location.href = 'mailto:lks0426aa@gmail.com';
   };
 
   return (
