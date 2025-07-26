@@ -225,48 +225,64 @@ export const learningMilestones: LearningMilestone[] = [
     id: '1',
     date: '2013–2017',
     title: '大学计算机基础',
-    description: '大连外国语大学软件技术专业，系统学习Java、数据库、数据结构等基础课程。',
+    description: '在大连外国语大学学习软件技术专业，系统掌握了Java编程、数据库设计、数据结构等核心技术，为之后的开发工作做好了准备。',
     technologies: ['Java', 'HTML/CSS/JS', 'MySQL', '数据结构'],
     type: 'learning'
   },
   {
     id: '2',
     date: '2017–2023',
-    title: '企业级项目经验',
-    description: '参与多个SaaS企业系统开发，积累Java Web开发和团队协作经验。',
-    technologies: ['Spring Boot', 'MyBatis', 'Oracle', 'jQuery'],
+    title: '企业开发经验',
+    description: '加入公司后参与了多个SaaS企业系统的开发，涉及人事管理、ERP、电商等不同业务领域，积累了丰富的Java Web开发和团队协作经验。',
+    technologies: ['Spring Boot', 'MyBatis', 'Oracle', 'jQuery', '团队开发'],
     type: 'project'
   },
   {
     id: '3',
     date: '2024-03',
-    title: '现代前端技术转型',
-    description: '学习React生态和现代前端开发模式，构建响应式用户界面。',
+    title: '现代前端技术学习',
+    description: '开始深入学习React生态和TypeScript，转向现代前端开发模式。通过重构个人项目，掌握了组件化开发和前端工程化实践。',
     technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
     type: 'learning'
   },
   {
     id: '4',
     date: '2024-06',
-    title: 'AI工具集成实践',
-    description: '探索AI开发工具，集成OpenAI和Claude API构建智能应用。',
-    technologies: ['OpenAI API', 'Claude API', 'Prompt Engineering'],
+    title: 'AI技术集成实践',
+    description: '开始接触和使用AI开发工具，学习如何集成OpenAI和Claude API。通过实际项目体验了AI技术在应用开发中的潜力。',
+    technologies: ['OpenAI API', 'Claude API', 'Prompt Engineering', 'AI集成'],
     type: 'project'
   },
   {
     id: '5',
-    date: '2024-08',
-    title: '云服务与DevOps',
-    description: '掌握AWS部署流程，实现项目的自动化部署和运维管理。',
-    technologies: ['AWS', 'Docker', 'CI/CD', 'Nginx'],
+    date: '2024-09',
+    title: '云服务部署学习',
+    description: '学习了AWS云服务和Docker容器化技术，掌握了CI/CD自动化部署流程。成功将个人项目部署到云端并实现持续集成。',
+    technologies: ['AWS', 'Docker', 'CI/CD', '云端部署'],
     type: 'achievement'
   },
   {
     id: '6',
-    date: '2024-10',
-    title: 'AI工作流自动化',
-    description: '使用n8n等工具构建智能工作流，提升开发和业务流程效率。',
-    technologies: ['n8n', 'LangChain', 'Vector Database'],
+    date: '2024-12',
+    title: '智能工作流开发',
+    description: '使用n8n等自动化工具构建智能工作流系统，结合LangChain和向量数据库技术，实现了业务流程的自动化处理。',
+    technologies: ['n8n', 'LangChain', 'Vector Database', '自动化工作流'],
+    type: 'project'
+  },
+  {
+    id: '7',
+    date: '2025-01',
+    title: 'AI编程工具使用',
+    description: '体验了Claude Code、Gemini CLI等新一代AI编程助手，感受到自然语言编程带来的开发效率提升，开始改变日常编程习惯。',
+    technologies: ['Claude Code', 'Gemini CLI', 'AI编程助手', '自然语言编程'],
+    type: 'learning'
+  },
+  {
+    id: '8',
+    date: '2025-02',
+    title: '推理模型应用探索',
+    description: '跟进DeepSeek R1和OpenAI o3等推理模型的发展，探索AI Agent的构建方法，尝试开发更智能的决策和推理应用。',
+    technologies: ['DeepSeek R1', 'OpenAI o3', 'AI Agent', '推理模型'],
     type: 'project'
   }
 ];
