@@ -224,65 +224,49 @@ export const learningMilestones: LearningMilestone[] = [
   {
     id: '1',
     date: '2013–2017',
-    title: '大连外国语大学：计算机基础打底',
-    description: '在大连外国语大学主修软件技术方向，系统学习 Java、Web 前端、数据库、数据结构与算法、网络基础等课程，为日后技术成长打下坚实基础。',
-    technologies: ['Java', 'HTML/CSS/JS', 'MySQL', '数据结构', '计算机基础'],
+    title: '大学计算机基础',
+    description: '大连外国语大学软件技术专业，系统学习Java、数据库、数据结构等基础课程。',
+    technologies: ['Java', 'HTML/CSS/JS', 'MySQL', '数据结构'],
     type: 'learning'
   },
   {
     id: '2',
     date: '2017–2023',
-    title: '企业级项目实战积累',
-    description: '深度参与10+个SaaS类企业系统项目，涵盖人事、ERP、教育、电商等行业。主导多个核心模块的开发，熟练掌握 Java Web、主流框架、数据库及团队协作经验。',
-    technologies: ['Java EE', 'Spring Boot', 'MyBatis', 'JSP', 'jQuery', 'Oracle'],
+    title: '企业级项目经验',
+    description: '参与多个SaaS企业系统开发，积累Java Web开发和团队协作经验。',
+    technologies: ['Spring Boot', 'MyBatis', 'Oracle', 'jQuery'],
     type: 'project'
   },
   {
     id: '3',
-    date: '2024-07～Now',
-    title: '全栈架构系统精进',
-    description: '重构个人项目架构，采用前后端分离和微服务理念，提升系统扩展性与可维护性。掌握 Git、CI/CD、模块化开发等现代开发模式。',
-    technologies: ['React', 'Next.js', 'Microservices', 'CI/CD', 'Git', 'Tailwind'],
+    date: '2024-03',
+    title: '现代前端技术转型',
+    description: '学习React生态和现代前端开发模式，构建响应式用户界面。',
+    technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
     type: 'learning'
   },
   {
     id: '4',
-    date: '2024-08～Now',
-    title: 'AI 技术体系与项目实践',
-    description: '学习并应用 LangChain、RAG、OpenAI API、Ollama 等技术，构建多个 AI 项目如：简历解析助手、邮件 Copilot、AI 内容生成器等，逐步形成工程化能力。',
-    technologies: ['LangChain', 'OpenAI', 'Embedding', 'RAG', 'Ollama', 'Agent'],
+    date: '2024-06',
+    title: 'AI工具集成实践',
+    description: '探索AI开发工具，集成OpenAI和Claude API构建智能应用。',
+    technologies: ['OpenAI API', 'Claude API', 'Prompt Engineering'],
     type: 'project'
   },
   {
     id: '5',
-    date: '2024-08～Now',
-    title: '云平台与部署技术实战',
-    description: '掌握 AWS 和 GCP 的云产品与部署流程，能独立使用 Fargate、Cloud Run、Amplify、Lambda 等服务完成全栈项目的部署与上线。',
-    technologies: ['AWS', 'Fargate', 'GCP', 'Cloud Run', 'Amplify', 'Lambda', 'S3', 'API Gateway'],
+    date: '2024-08',
+    title: '云服务与DevOps',
+    description: '掌握AWS部署流程，实现项目的自动化部署和运维管理。',
+    technologies: ['AWS', 'Docker', 'CI/CD', 'Nginx'],
     type: 'achievement'
   },
   {
     id: '6',
-    date: '2024-08～Now',
-    title: 'Docker 与本地服务管理',
-    description: '深入学习 Docker 基础、镜像构建、Compose、网络配置等内容，完成本地 AI 模型部署、n8n 服务搭建、多服务协同测试等开发支撑。',
-    technologies: ['Docker', 'Docker Compose', 'n8n', '本地 LLM', '服务编排'],
-    type: 'learning'
-  },
-  {
-    id: '7',
-    date: '2024-09～Now',
-    title: '自动化工具与开发提效',
-    description: '掌握 n8n、Make、Zapier 等自动化平台，结合 Google API 与 Vector Store，实现智能工作流系统（如：邮件统计、访客追踪、表单处理等）。',
-    technologies: ['n8n', 'Make', 'Google Apps Script', '向量匹配', '自动化工作流'],
+    date: '2024-10',
+    title: 'AI工作流自动化',
+    description: '使用n8n等工具构建智能工作流，提升开发和业务流程效率。',
+    technologies: ['n8n', 'LangChain', 'Vector Database'],
     type: 'project'
-  },
-  {
-    id: '8',
-    date: '2024-09～Now',
-    title: 'Python 与 AI 后端实践',
-    description: '系统学习 Python 编程、数据处理与 FastAPI 开发，构建 AI 后端服务并集成 OpenAI、Claude 等 API，实现 Prompt 优化与自动问答系统。',
-    technologies: ['Python', 'FastAPI', 'Pandas', 'Prompt Engineering', 'OpenAI API'],
-    type: 'learning'
   }
 ];
