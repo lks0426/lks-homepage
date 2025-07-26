@@ -42,20 +42,20 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              和我一起探索{' '}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+              探索{' '}
               <motion.span 
                 className="bg-gradient-secondary bg-clip-text text-transparent animate-gradient-shift"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
-                AI 的无限可能
+                AI 创业
               </motion.span>
-              {' '}– LKS
+              {' '}之路 – LKS
             </h1>
-            <div className="text-lg md:text-xl text-text-secondary mb-8 leading-relaxed">
+            <div className="text-base md:text-lg text-text-secondary mb-8 leading-relaxed">
               <motion.div
-                className="font-medium"
+                className="font-medium mb-3"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
@@ -63,24 +63,13 @@ export default function Hero() {
                 AI 技术创业者 & 全栈开发者
               </motion.div>
               <motion.div
-                className="mt-3 text-base md:text-lg text-text-muted max-w-4xl mx-auto"
+                className="text-sm md:text-base text-text-muted max-w-2xl mx-auto"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
-                公开分享从 0→1 的产品验证、技术选型与踩坑记录
-                <br className="hidden md:block" />
-                欢迎交流、共同成长 🚀
-              </motion.div>
-              <motion.div
-                className="mt-4 text-base text-text-secondary max-w-3xl mx-auto"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.9, duration: 0.6 }}
-              >
-                从想法验证、MVP落地、到技术实现与商业化路径
-                <br />
-                <span className="text-primary-blue font-medium">你也在做？来一起讨论 💬</span>
+                分享从 0→1 的实战经验，技术选型与创业踩坑
+                <span className="text-primary-blue font-medium ml-2">一起交流讨论 💬</span>
               </motion.div>
             </div>
           </motion.div>
@@ -89,7 +78,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2, duration: 0.6 }}
+            transition={{ delay: 0.9, duration: 0.6 }}
           >
             <Button
               variant="primary"
