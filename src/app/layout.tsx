@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import AnimationProvider from '@/components/providers/AnimationProvider'
+import ClientWrapper from '@/components/ClientWrapper';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -77,7 +78,9 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} antialiased`} suppressHydrationWarning={true}>
         <AnimationProvider>
-          <div id="root">{children}</div>
+          <ClientWrapper>
+            <div id="root">{children}</div>
+          </ClientWrapper>
         </AnimationProvider>
       </body>
     </html>
