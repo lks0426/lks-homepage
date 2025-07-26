@@ -235,39 +235,19 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               }}
             />
             
-            <motion.div 
-              className="absolute inset-0 flex items-center justify-center text-text-muted"
-            >
-              <div className="text-center">
-                <motion.div
-                  whileHover={shouldAnimate('decorative') ? {
-                    scale: 1.2,
-                    rotate: [0, -5, 5, 0],
-                    y: -5
-                  } : {}}
-                  transition={{
-                    duration: getAnimationDuration(0.4),
-                    ease: 'easeOut'
-                  }}
-                >
-                  <ProjectIcon 
-                    name={project.title} 
-                    category={project.category as any} 
-                    size="lg" 
-                    className="mb-4 text-primary-blue"
-                  />
-                </motion.div>
-                <motion.div 
-                  className="text-sm"
-                  animate={isHovered && shouldAnimate('decorative') ? {
-                    y: [0, -2, 0],
-                    transition: { repeat: Infinity, duration: 1.5 }
-                  } : {}}
-                >
-                  项目预览
-                </motion.div>
-              </div>
-            </motion.div>
+            {/* 实际项目图片 */}
+            <motion.img
+              src={project.image}
+              alt={project.title}
+              className="absolute inset-0 w-full h-full object-cover"
+              animate={isHovered && shouldAnimate('decorative') ? {
+                scale: 1.05
+              } : {}}
+              transition={{
+                duration: getAnimationDuration(0.6),
+                ease: 'easeOut'
+              }}
+            />
             
             {/* Floating particles */}
             {shouldAnimate('decorative') && [
