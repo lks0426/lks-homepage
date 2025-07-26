@@ -111,6 +111,16 @@ export const techSkills: TechSkill[] = [
 // AI Tools
 export const aiTools: AITool[] = [
   {
+    id: 'n8n',
+    name: 'n8n',
+    description: '可视化工作流自动化平台，连接各种服务和API',
+    icon: 'n8n',
+    category: 'Automation',
+    rating: 85,
+    features: ['可视化编辑', 'API集成', '定时任务', '数据处理'],
+    liveUrl: 'https://n8n.lks0426.com/'
+  },
+  {
     id: 'claude-code',
     name: 'Claude Code',
     description: 'Anthropic的AI编程助手，支持代码生成、调试和重构',
@@ -118,15 +128,6 @@ export const aiTools: AITool[] = [
     category: 'Development',
     rating: 95,
     features: ['代码生成', '智能调试', '重构建议', '技术栈支持']
-  },
-  {
-    id: 'cursor',
-    name: 'Cursor',
-    description: '基于AI的智能代码编辑器，提供上下文感知的编码体验',
-    icon: 'Cursor',
-    category: 'Development',
-    rating: 92,
-    features: ['AI补全', '代码解释', '重构助手', '项目理解']
   },
   {
     id: 'superclaude',
@@ -147,15 +148,6 @@ export const aiTools: AITool[] = [
     features: ['本地部署', '模型管理', 'API接口', '隐私保护']
   },
   {
-    id: 'n8n',
-    name: 'n8n',
-    description: '可视化工作流自动化平台，连接各种服务和API',
-    icon: 'n8n',
-    category: 'Automation',
-    rating: 85,
-    features: ['可视化编辑', 'API集成', '定时任务', '数据处理']
-  },
-  {
     id: 'anythingllm',
     name: 'AnythingLLM',
     description: '私有知识库和文档管理系统，支持AI问答',
@@ -163,6 +155,15 @@ export const aiTools: AITool[] = [
     category: 'Knowledge Base',
     rating: 87,
     features: ['文档上传', '智能问答', '知识检索', '团队协作']
+  },
+  {
+    id: 'cursor',
+    name: 'Cursor',
+    description: '基于AI的智能代码编辑器，提供上下文感知的编码体验',
+    icon: 'Cursor',
+    category: 'Development',
+    rating: 92,
+    features: ['AI补全', '代码解释', '重构助手', '项目理解']
   }
 ];
 
@@ -222,66 +223,66 @@ export const aiServices: AIService[] = [
 export const learningMilestones: LearningMilestone[] = [
   {
     id: '1',
-    date: '2024-12',
-    title: 'SuperClaude AI助手开发',
-    description: '开发增强版Claude助手，优化开发工作流程和代码质量。集成多种AI工具链，提升开发效率。',
-    technologies: ['Claude API', 'TypeScript', 'Workflow Automation'],
-    type: 'project'
+    date: '2013–2017',
+    title: '大连外国语大学：计算机基础打底',
+    description: '在大连外国语大学主修软件技术方向，系统学习 Java、Web 前端、数据库、数据结构与算法、网络基础等课程，为日后技术成长打下坚实基础。',
+    technologies: ['Java', 'HTML/CSS/JS', 'MySQL', '数据结构', '计算机基础'],
+    type: 'learning'
   },
   {
     id: '2',
-    date: '2024-11',
-    title: 'AI-HR系统上线',
-    description: '完成智能招聘系统的开发和部署，实现简历智能解析、候选人匹配等核心功能。',
-    technologies: ['Next.js', 'OpenAI API', 'AWS Deployment'],
-    type: 'achievement'
+    date: '2017–2023',
+    title: '企业级项目实战积累',
+    description: '深度参与10+个SaaS类企业系统项目，涵盖人事、ERP、教育、电商等行业。主导多个核心模块的开发，熟练掌握 Java Web、主流框架、数据库及团队协作经验。',
+    technologies: ['Java EE', 'Spring Boot', 'MyBatis', 'JSP', 'jQuery', 'Oracle'],
+    type: 'project'
   },
   {
     id: '3',
-    date: '2024-10',
-    title: 'RAG系统深度学习',
-    description: '深入学习检索增强生成技术，掌握向量数据库和语义搜索的实现原理。',
-    technologies: ['LangChain', 'Vector Database', 'Embedding'],
+    date: '2024-07～Now',
+    title: '全栈架构系统精进',
+    description: '重构个人项目架构，采用前后端分离和微服务理念，提升系统扩展性与可维护性。掌握 Git、CI/CD、模块化开发等现代开发模式。',
+    technologies: ['React', 'Next.js', 'Microservices', 'CI/CD', 'Git', 'Tailwind'],
     type: 'learning'
   },
   {
     id: '4',
-    date: '2024-09',
-    title: '本地AI模型部署',
-    description: '学习使用Ollama部署和管理本地大语言模型，实现隐私保护的AI应用。',
-    technologies: ['Ollama', 'Local LLM', 'Model Management'],
-    type: 'learning'
-  },
-  {
-    id: '5',
-    date: '2024-08',
-    title: 'Cloud Code IDE掌握',
-    description: '深入学习Claude Code和Cursor等AI编程工具，显著提升编码效率。',
-    technologies: ['Claude Code', 'Cursor', 'AI-Assisted Development'],
-    type: 'learning'
-  },
-  {
-    id: '6',
-    date: '2024-07',
-    title: '全栈项目架构升级',
-    description: '重构个人项目架构，采用微服务设计，提升系统可扩展性和维护性。',
-    technologies: ['Microservices', 'Docker', 'CI/CD'],
+    date: '2024-08～Now',
+    title: 'AI 技术体系与项目实践',
+    description: '学习并应用 LangChain、RAG、OpenAI API、Ollama 等技术，构建多个 AI 项目如：简历解析助手、邮件 Copilot、AI 内容生成器等，逐步形成工程化能力。',
+    technologies: ['LangChain', 'OpenAI', 'Embedding', 'RAG', 'Ollama', 'Agent'],
     type: 'project'
   },
   {
-    id: '7',
-    date: '2024-06',
-    title: 'AI集成专项提升',
-    description: '专注学习AI API集成技术，掌握OpenAI、Claude等多平台API的应用开发。',
-    technologies: ['OpenAI API', 'Claude API', 'Prompt Engineering'],
+    id: '5',
+    date: '2024-08～Now',
+    title: '云平台与部署技术实战',
+    description: '掌握 AWS 和 GCP 的云产品与部署流程，能独立使用 Fargate、Cloud Run、Amplify、Lambda 等服务完成全栈项目的部署与上线。',
+    technologies: ['AWS', 'Fargate', 'GCP', 'Cloud Run', 'Amplify', 'Lambda', 'S3', 'API Gateway'],
+    type: 'achievement'
+  },
+  {
+    id: '6',
+    date: '2024-08～Now',
+    title: 'Docker 与本地服务管理',
+    description: '深入学习 Docker 基础、镜像构建、Compose、网络配置等内容，完成本地 AI 模型部署、n8n 服务搭建、多服务协同测试等开发支撑。',
+    technologies: ['Docker', 'Docker Compose', 'n8n', '本地 LLM', '服务编排'],
     type: 'learning'
   },
   {
+    id: '7',
+    date: '2024-09～Now',
+    title: '自动化工具与开发提效',
+    description: '掌握 n8n、Make、Zapier 等自动化平台，结合 Google API 与 Vector Store，实现智能工作流系统（如：邮件统计、访客追踪、表单处理等）。',
+    technologies: ['n8n', 'Make', 'Google Apps Script', '向量匹配', '自动化工作流'],
+    type: 'project'
+  },
+  {
     id: '8',
-    date: '2024-05',
-    title: '现代前端框架精进',
-    description: '深入学习Next.js 14新特性，掌握服务端组件和app router等先进技术。',
-    technologies: ['Next.js 14', 'Server Components', 'App Router'],
+    date: '2024-09～Now',
+    title: 'Python 与 AI 后端实践',
+    description: '系统学习 Python 编程、数据处理与 FastAPI 开发，构建 AI 后端服务并集成 OpenAI、Claude 等 API，实现 Prompt 优化与自动问答系统。',
+    technologies: ['Python', 'FastAPI', 'Pandas', 'Prompt Engineering', 'OpenAI API'],
     type: 'learning'
   }
 ];

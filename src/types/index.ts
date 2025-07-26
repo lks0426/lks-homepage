@@ -28,6 +28,7 @@ export interface AITool {
   category: string;
   rating: number;
   features: string[];
+  liveUrl?: string;
 }
 
 // Service Interface

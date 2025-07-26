@@ -171,12 +171,13 @@ function ToolCard({ tool }: { tool: typeof aiTools[0] }) {
             推荐指数: {tool.rating}%
           </div>
           <Button
-            variant="primary"
+            variant={tool.liveUrl ? "primary" : "ghost"}
             size="sm"
-            onClick={() => {
-              // 这里可以添加具体的链接逻辑
-              console.log(`Opening ${tool.name}`);
-            }}
+            onClick={tool.liveUrl ? () => {
+              window.open(tool.liveUrl, '_blank');
+            } : undefined}
+            disabled={!tool.liveUrl}
+            href={tool.liveUrl}
             icon={<ExternalLink size={14} />}
           >
             了解更多
